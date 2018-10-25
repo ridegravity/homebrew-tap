@@ -29,7 +29,7 @@ brew services stop postgresql
 After this, install Clover's custom brew tap:
 
 ```sh
-brew tap cloverhealth/homebrew-tap
+brew tap ridegravity/homebrew-tap
 ```
 
 Then install the latest version of Postgres and unlink it. This is done first so that
@@ -49,7 +49,7 @@ rm -rf /usr/local/var/postgres
 Now install Postgres from this tap with:
 
 ```sh
-brew install cloverhealth/tap/postgresql  # yes, without the homebrew-
+brew install ridegravity/tap/postgresql [--without-perl] # yes, without the homebrew-
 ```
 
 Now you will have both 9.6.8 and the latest version of Postgres installed.
@@ -62,7 +62,7 @@ brew switch postgresql 9.6.8
 Postgis 2.3 can be installed with:
 
 ```sh
-brew install cloverhealth/tap/postgis
+brew install ridegravity/tap/postgis
 ```
 
 Try running and accessing Postgres with the following:
